@@ -100,9 +100,10 @@
 }
 
 - (IBAction)changeHall:(UISegmentedControl *)sender{
-    isFullBreakfast = NO;
-    isFullDinner = NO;
-    isFullLunch = NO;
+    for(int i = 0; i<[fullMeals count];i++)
+    {
+        fullMeals[i] = [NSNumber numberWithBool:NO];
+    }
     switch ([sender selectedSegmentIndex]) {
         case 0:
             [self toWetherell];
@@ -144,6 +145,20 @@
     [sectionLabel setFont:[UIFont boldSystemFontOfSize:15.0]];
     [aView setBackgroundColor: [UIColor colorWithRed:189.f/255 green:189.f/255 blue:189.f/255 alpha:0.8]];
     UIButton *btn=[[UIButton alloc] initWithFrame:CGRectMake(sectionLabel.frame.size.width+8, 2, 40, 40)];
+    UIImage *up = [UIImage imageNamed:@"up"];
+    UIImage *down = [UIImage imageNamed:@"down"];
+    if([[fullMeals objectAtIndex:section] boolValue])
+    {
+        [btn setImage:up forState:UIControlStateNormal];
+    }
+    else
+    {
+        [btn setImage:down forState:UIControlStateNormal];
+    }
+    if([[self.Menus objectAtIndex:section] count] <=3)
+    {
+        btn.enabled = NO;
+    }
     [btn addTarget:self action:@selector(sectionTapped:) forControlEvents:UIControlEventTouchDown];
     //[btn setFrame:CGRectMake(8+sectionLabel.frame.size.width, 2, 40, 40)];
     [btn setTag:section+1];

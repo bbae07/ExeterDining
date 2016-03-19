@@ -12,13 +12,13 @@
 		D53AC2611C375B2600AEB8C8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D53AC2601C375B2600AEB8C8 /* AppDelegate.m */; };
 		D53AC2671C375B2600AEB8C8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D53AC2651C375B2600AEB8C8 /* Main.storyboard */; };
 		D53AC2691C375B2600AEB8C8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D53AC2681C375B2600AEB8C8 /* Images.xcassets */; };
-		D53AC26C1C375B2600AEB8C8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D53AC26A1C375B2600AEB8C8 /* LaunchScreen.xib */; };
 		D53AC2781C375B2600AEB8C8 /* ExeterDiningTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D53AC2771C375B2600AEB8C8 /* ExeterDiningTests.m */; };
 		D53AC2831C37667000AEB8C8 /* EDTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D53AC2821C37667000AEB8C8 /* EDTableViewController.m */; };
 		D56A63D71C8EEA530033C9D8 /* Dhall.m in Sources */ = {isa = PBXBuildFile; fileRef = D56A63D61C8EEA530033C9D8 /* Dhall.m */; };
 		D56A63DA1C8EF0830033C9D8 /* ServerConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = D56A63D91C8EF0830033C9D8 /* ServerConnection.m */; };
 		D56A63E41C92DE650033C9D8 /* EDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D56A63E21C92DE650033C9D8 /* EDViewController.m */; };
 		D56A63E51C92DE650033C9D8 /* EDViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D56A63E31C92DE650033C9D8 /* EDViewController.xib */; };
+		D5B35E361C9D3D6E00BA238D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5B35E351C9D3D6E00BA238D /* LaunchScreen.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +40,6 @@
 		D53AC2601C375B2600AEB8C8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		D53AC2661C375B2600AEB8C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D53AC2681C375B2600AEB8C8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		D53AC26B1C375B2600AEB8C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		D53AC2711C375B2600AEB8C8 /* ExeterDiningTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExeterDiningTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D53AC2761C375B2600AEB8C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D53AC2771C375B2600AEB8C8 /* ExeterDiningTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExeterDiningTests.m; sourceTree = "<group>"; };
@@ -53,6 +52,7 @@
 		D56A63E11C92DE650033C9D8 /* EDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDViewController.h; sourceTree = "<group>"; };
 		D56A63E21C92DE650033C9D8 /* EDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDViewController.m; sourceTree = "<group>"; };
 		D56A63E31C92DE650033C9D8 /* EDViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EDViewController.xib; sourceTree = "<group>"; };
+		D5B35E351C9D3D6E00BA238D /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		E032A7D4127E182CE1D04004 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E04BE8D4DFA7C850206A4E32 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -171,7 +171,7 @@
 				D53AC2601C375B2600AEB8C8 /* AppDelegate.m */,
 				D53AC2651C375B2600AEB8C8 /* Main.storyboard */,
 				D53AC2681C375B2600AEB8C8 /* Images.xcassets */,
-				D53AC26A1C375B2600AEB8C8 /* LaunchScreen.xib */,
+				D5B35E351C9D3D6E00BA238D /* LaunchScreen.xib */,
 				D53AC25B1C375B2600AEB8C8 /* Supporting Files */,
 			);
 			name = Others;
@@ -261,9 +261,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5B35E361C9D3D6E00BA238D /* LaunchScreen.xib in Resources */,
 				D53AC2671C375B2600AEB8C8 /* Main.storyboard in Resources */,
 				D56A63E51C92DE650033C9D8 /* EDViewController.xib in Resources */,
-				D53AC26C1C375B2600AEB8C8 /* LaunchScreen.xib in Resources */,
 				D53AC2691C375B2600AEB8C8 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -366,14 +366,6 @@
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		D53AC26A1C375B2600AEB8C8 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D53AC26B1C375B2600AEB8C8 /* Base */,
-			);
-			name = LaunchScreen.xib;
-			sourceTree = "<group>";
-		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -462,7 +454,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B703D7CA5420E2AB6358BC7E /* Pods.debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = ExeterDining/Info.plist;
@@ -470,6 +462,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.BrianBae.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -477,7 +470,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E04BE8D4DFA7C850206A4E32 /* Pods.release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = ExeterDining/Info.plist;
@@ -485,6 +478,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.BrianBae.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

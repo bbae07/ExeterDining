@@ -12,7 +12,7 @@
 - (void) getMenu:(void (^)(NSInteger status, NSDictionary *wMenu, NSDictionary *eMenu, NSError *error))action
 {
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
-    [manager GET:@"http://chanseo07.pythonanywhere.com/exeter/json" parameters:nil success:^(NSURLSessionDataTask * __nonnull task, id __nonnull responseObject)
+    [manager GET:@"http://leekyungmoon.pythonanywhere.com/exeter/json" parameters:nil success:^(NSURLSessionDataTask * __nonnull task, id __nonnull responseObject)
     {
         NSDictionary *wMenu = [[responseObject objectForKey:@"Restaurants"] objectAtIndex:0];
         NSDictionary *eMenu = [[responseObject objectForKey:@"Restaurants"] objectAtIndex:1];
@@ -29,7 +29,7 @@
 {
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
     NSDictionary *apnsToken = @{@"APNS_TOKEN":token};
-    [manager POST:@"http://chanseo07.pythonanywhere.com/exeter/register" parameters:apnsToken success:^(NSURLSessionDataTask * _Nonnull task, id  _Nonnull responseObject) {
+    [manager POST:@"http://leekyungmoon.pythonanywhere.com/exeter/register" parameters:apnsToken success:^(NSURLSessionDataTask * _Nonnull task, id  _Nonnull responseObject) {
         NSInteger status = [[responseObject objectForKey:@"RESULT"] integerValue];
         action(status,nil);
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
